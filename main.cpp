@@ -4,16 +4,18 @@
 using namespace std;
 
 double check(const string& x){
-    double y;
-    do
-    {
+    double y = 0.0;
+
+    while(y<=0){
         cin.clear();
         cin.sync();
         cout << "Enter " << x << ":";
         cin>>y;
-        if(y <= 0)
-            cout<<"That is not positive number!\n";
-    }while(y<=0);
+        if(cin.fail())
+            cout<<"That is not number!\n";
+        else if ( y <= 0 )
+            cout << "That is not positive number!\n";
+    }
     return y;
 }
 
