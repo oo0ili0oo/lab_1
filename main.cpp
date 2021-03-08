@@ -15,7 +15,7 @@ double check(const string& x){
             cout<<"That is not number!\n";
         else if ( y <= 0 )
             cout << "That is not positive number!\n";
-    }while(cin.fail()||y<=0);
+    }while(y<=0);
     return y;
 }
 
