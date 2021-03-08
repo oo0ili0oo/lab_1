@@ -11,10 +11,8 @@ double check(const string& x){
         cin.sync();
         cout << "Enter " << x << ":";
         cin>>y;
-        if(cin.fail())
-            cout<<"That is not number!\n";
-        else if ( y <= 0 )
-            cout << "That is not positive number!\n";
+        if(y <= 0)
+            cout<<"That is not positive number!\n";
     }while(y<=0);
     return y;
 }
