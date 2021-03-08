@@ -1,5 +1,6 @@
 #include <cmath>
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ double check(const string& x){
     double y;
     do
     {
-        y = 0.0;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin.clear();
         cin.sync();
         cout << "Enter " << x << ":";
