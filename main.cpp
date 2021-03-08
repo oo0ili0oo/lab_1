@@ -8,9 +8,9 @@ double check(const string& x){
     double y;
     do
     {
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin.clear();
         cin.sync();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Enter " << x << ":";
         cin>>y;
         if(cin.fail())
